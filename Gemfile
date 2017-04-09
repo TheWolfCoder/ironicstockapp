@@ -27,6 +27,9 @@ gem 'jquery-rails'
 gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
+gem 'devise', '~> 4.1', '>= 4.1.1'
+gem 'twitter-bootstrap-rails', '~> 4.0'
+gem 'devise-bootstrap-views', '~> 0.0.11'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
@@ -50,7 +53,6 @@ group :development do
 end
 
 group :production do
-gem 'pg', '~> 0.18'
   gem 'rails_12factor', '~> 0.0.3'
  # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 end
