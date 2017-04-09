@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   devise_for :users
-  
+  get "welcome/index"
 devise_scope :user do
   authenticated :user do
     root 'welcome#index', as: :authenticated_root
