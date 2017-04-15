@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   get "welcome/index"
   get 'my_portfolio', to: "users#my_portfolio"
   get 'search_stocks', to: "stocks#search"
+  get "my_friends", to: "users#my_friends"
 devise_scope :user do
   authenticated :user do
     root 'welcome#index', as: :authenticated_root
