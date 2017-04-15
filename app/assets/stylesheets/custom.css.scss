@@ -27,4 +27,12 @@
   .btn-danger:hover {
     background-color: darken(#ff0000, 20%) !important;
   }
+  
+  .btn-primary:hover, .btn-primary:focus {
+    background-color: darken(#428bca,20%) !important;
+  }
+  
+  .btn-primary:visited, .btn-danger:visited {
+    color: #fff;
+  }
 }
