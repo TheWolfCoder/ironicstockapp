@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+   root 'users#my_portfolio'
   devise_for :users
   resources :user_stocks, except: [:show, :edit, :update]
   get "welcome/index"
